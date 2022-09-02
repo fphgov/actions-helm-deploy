@@ -1,0 +1,52 @@
+name: 'actions-helm-deploy'
+description: 'Helm deploy for k8s'
+author: 'PeterHallgato'
+branding:
+  color: 'blue'
+  icon: 'server'
+inputs:
+  helm_repository_url:
+    description: "Helm repository url"
+    required: true 
+  helm_repository_name:
+    description: "Helm repository name"
+    required: true
+  helm_repository_alias:
+    description: "Helm repository alias"
+    required: true
+  helm_repository_user:
+    description: "Helm repository user"
+    required: true
+  helm_repository_password:
+    description: "Helm repository password"
+    required: true
+  helm_repository_insecure:
+    description: "Helm repository insecure mode (default false)"
+    required: false
+  helm_chart:
+    description: "Helm chart name"
+    required: true
+  helm_chart_version:
+    description: "Helm chart version"
+    required: false
+  app_name:
+    description: "App installation name"
+    required: true
+  namespace:
+    description: "App installation namespace"
+    required: true
+  kubeconfig:
+    description: "kubeconfig in string"
+    required: true
+  helm_values_file:
+    description: "Helm chart custom values file path."
+    required: false
+  helm_repository_add_extra_args:
+    description: "Helm add extra arguments"
+    required: false
+  helm_repository_upgrade_extra_args:
+    description: "Helm upgrade extra arguments"
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
