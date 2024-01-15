@@ -47,7 +47,7 @@ jobs:
 |------------------------------------|------------------------------------|----------|---------|
 | helm_chart_version                 | Helm chart version                 | false    |         |
 | helm_repository_insecure           | Helm repository insecure mode      | false    | false   |
-| helm_repository_add_extra_args     | Helm add extra arguments           | false    |         |
+| helm_repository_login_extra_args   | Helm login extra arguments         | false    |         |
 | helm_repository_upgrade_extra_args | Helm upgrade extra arguments       | false    |         |
 | helm_values_file                   | Helm chart custom values file path | false    |         |
 

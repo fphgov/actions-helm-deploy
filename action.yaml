@@ -41,8 +41,8 @@ inputs:
   helm_values_file:
     description: "Helm chart custom values file path."
     required: false
-  helm_repository_add_extra_args:
-    description: "Helm add extra arguments"
+  helm_repository_login_extra_args:
+    description: "Helm login extra arguments"
     required: false
   helm_repository_upgrade_extra_args:
     description: "Helm upgrade extra arguments"
