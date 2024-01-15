@@ -52,7 +52,7 @@ EOF
 
 export KUBECONFIG="/kubeconfig.yaml"
 
-helm repo add "${HELM_REPOSITORY_ALIAS}" "https://${HELM_REPOSITORY_URL}/repository/${HELM_REPOSITORY_NAME}" \
+helm repo add "${HELM_REPOSITORY_ALIAS}" "https://${HELM_REPOSITORY_URL}/${HELM_REPOSITORY_NAME}" \
     --username "${HELM_REPOSITORY_USER}" \
     --password "${HELM_REPOSITORY_PASSWORD}" $HELM_REPOSITORY_ADD_EXTRA_ARGS
 
