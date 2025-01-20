@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV HELM_VERSION v3.13.2
+ENV HELM_VERSION v3.17.0
 
 RUN apk add --no-cache ca-certificates curl tar bash
 
